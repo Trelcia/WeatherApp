@@ -3,10 +3,15 @@ export const getWeatherByCity = city => {
     .then(resp => resp.json())
     .then(data => data.main)
     .then(weather => {
-        const temp = Math.round(weather.temp - 273.15) + '°C'
+        const tempNow = Math.round(weather.temp - 273.15) + '°C'
         const tempMax = Math.round(weather.temp_max - 273.15) + '°C'
         const tempMin = Math.round(weather.temp_min - 273.15) + '°C'
 
-        return (`${temp} ${tempMax} ${tempMin}`)
+        const temp = [
+            tempNow,
+            tempMax,
+            tempMin,
+        ]
+        return (temp)
     })
 }
