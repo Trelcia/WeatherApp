@@ -50,13 +50,27 @@ main {
 }
 .weather-info_forecast-view {
     display: none;
-}
-.weather-info_citty {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
     align-items: center;
+}
+.weather-info_city {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    Width: 80%;
 }
 .weather-info_btn-return {
     padding: 5px 25px;
     border: 2px solid #000;
+}
+#weatherIcon {
+    -webkit-filter: drop-shadow(0px 0px 5px #222);
+    filter: drop-shadow(0px 0px 5px #222);
+}
+.look-better {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 }
