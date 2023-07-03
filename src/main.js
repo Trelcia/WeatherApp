@@ -29,7 +29,9 @@ class WeatherApp {
             let query = this.viewElems.searchInput.value;
             getWeatherByCity(query).then(data => {
                 this.displayWeatherData(data);
-            });
+            }).catch(() => {
+                this.switchView();
+            })
         }
     }
 
@@ -53,7 +55,8 @@ class WeatherApp {
 
     returnToSearch = () => {
         this.fadeInOut()
-    
+        this.viewElems.searchInput.value = '';
+        
         setTimeout(() => {
             this.switchView();
             this.fadeInOut();  
