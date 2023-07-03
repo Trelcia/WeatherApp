@@ -40,18 +40,20 @@ main {
 .weather-info_search-view input {
     padding: 10px 50px;
     border: 2px solid #000;
+    border-radius: 10px;
     font-size: 150%;
     text-align: center;
 }
 .weather-info_search-view button {
     padding: 10px 50px;
     border: 2px solid #000;
+    border-radius: 10px;
     font-size: 100%;
 }
 .weather-info_forecast-view {
     display: none;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
 }
 .weather-info_city {
@@ -59,18 +61,21 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    Width: 80%;
+    width: 60%;
 }
 .weather-info_btn-return {
-    padding: 5px 25px;
+    position: absolute; bottom: 0; right: 0;
+    padding: 10px 50px;
     border: 2px solid #000;
+    border-radius: 10px;
 }
 #weatherIcon {
     -webkit-filter: drop-shadow(0px 0px 5px #222);
     filter: drop-shadow(0px 0px 5px #222);
 }
-.look-better {
+.btn-box {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 60%;
+    position: relative;
 }
