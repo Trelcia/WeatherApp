@@ -14,4 +14,4 @@ const mapListToDOMElems = listOfId => {
 
 export {
     mapListToDOMElems
-} 
+}
